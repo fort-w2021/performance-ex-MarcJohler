@@ -60,8 +60,7 @@ testdata <- as.data.frame(
   )
 )
 
-profvis::profvis(
-  {
+profvis::profvis({
     test <- simulate(reps = 500, seed = 20141028, data = testdata)
   },
   interval = 0.001
